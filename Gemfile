@@ -17,7 +17,7 @@ source 'https://elekdstj.github.io' do
     gem 'my_gem', '1.0'
     gem 'another_gem', '1.2.1'
 
-  gem 'disch', :git => 'https://github.com/elekdstj/disch.github.io.git', :branch => '1.4'
+  gem 'disch', :git => 'https://github.com/elekdstj/disch.git', :branch => '1.4'
 
   gem 'extracted_library', :path => './vendor/extracted_library'
 
