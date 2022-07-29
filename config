@@ -1,0 +1,38 @@
+source "https://rubygems.org"
+
+gem 'nokogiri'
+gem 'rails', '5.0.0'
+gem 'rack',  '>=1.0'
+gem 'thin',  '~>1.1'
+
+gem 'rack-cache', :require => 'rack/cache'
+gem 'sqlite3'
+
+gem 'rspec', :require => false
+gem 'sqlite3'
+
+source 'https://disch.github.io' do
+    gem 'my_gem', '1.0'
+    gem 'another_gem', '1.2.1'
+  end
+
+  gem 'disch', :git => 'https://github.com/elekdstj/disch.git', :branch => '1.4'
+
+  gem 'extracted_library', :path => './vendor/extracted_library'
+
+  path 'components' do
+    gem 'admin_ui'
+    gem 'public_ui'
+  end
+
+  gem 'wirble', :group => :development
+  gem 'debugger', :group => [:development, :test]
+
+group :test do
+  gem 'rspec'
+end
+
+  
+  
+
+  
